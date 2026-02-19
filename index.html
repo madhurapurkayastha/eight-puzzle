@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>8-Puzzle · A* Solver</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>8-PUZZLE GAME</h1>
+      <span class="subtitle">A* Algorithm</span>
+    </header>
+
+    <div id="diff-bar">
+      <span class="diff-label">Difficulty:</span>
+      <button class="diff-btn"        data-diff="easy">Easy</button>
+      <button class="diff-btn active" data-diff="medium">Medium</button>
+      <button class="diff-btn"        data-diff="hard">Hard</button>
+    </div>
+
+    <div id="stats-bar">
+      <span id="moves">Your Moves: 0</span>
+      <span id="timer">&#9201; 00:00</span>
+      <span id="mode">&#9679; MANUAL MODE</span>
+      <span id="optimal">Optimal Steps: &#8212;</span>
+    </div>
+
+    <div id="perm"></div>
+    <div id="board"></div>
+    <div id="hint-label"></div>
+
+    <div id="controls">
+      <button id="btn-hint">&#128161; Hint</button>
+      <button id="btn-ai">&#129302; AI Solve</button>
+      <button id="btn-new">&#128256; New Game</button>
+      <button id="btn-reset">&#8634; Reset</button>
+    </div>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>
